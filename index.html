@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium VPS Hosting Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .plan-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .feature-badge {
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            background: #3b82f6;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cfa3c997-1570-4a73-9715-7c084cfaf77d.png" alt="Company logo with a server icon and cloud symbol in blue and white" class="h-8 w-auto">
+                        <span class="ml-2 text-xl font-bold text-gray-800">CloudVPS</span>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="#" class="border-blue-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Home</a>
+                        <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Features</a>
+                        <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Pricing</a>
+                        <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Support</a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300">Client Area</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+                <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                    <div class="sm:text-center lg:text-left">
+                        <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                            <span class="block xl:inline">Powerful Cloud</span>
+                            <span class="block text-blue-600 xl:inline">VPS Hosting</span>
+                        </h1>
+                        <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                            High performance virtual private servers with SSD storage, dedicated resources, and 24/7 expert support.
+                        </p>
+                        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                            <div class="rounded-md shadow">
+                                <a href="#pricing" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10">
+                                    View Plans
+                                </a>
+                            </div>
+                            <div class="mt-3 sm:mt-0 sm:ml-3">
+                                <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200 md:py-4 md:text-lg md:px-10">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 hidden lg:block">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6eb5174d-9f7d-4b5d-b488-3a4fc1052451.png" alt="3D render of abstract cloud server infrastructure with glowing nodes and connections" class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full">
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Features</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Enterprise-grade infrastructure
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    Our VPS solutions are built for performance and reliability
+                </p>
+            </div>
+
+            <div class="mt-10">
+                <div class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Lightning Fast SSDs</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                NVMe SSD storage for blazing fast read/write speeds and reduced latency.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">DDoS Protection</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Advanced network-level DDoS protection to keep your services online.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Global Locations</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Choose from multiple data center locations worldwide for optimal latency.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">24/7 Support</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Our expert team is available around the clock to assist you.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <div id="pricing" class="bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="sm:flex sm:flex-col sm:align-center">
+                <h2 class="text-3xl text-center font-extrabold text-gray-900 sm:text-4xl">
+                    Simple, transparent pricing
+                </h2>
+                <p class="mt-5 text-xl text-center text-gray-500 max-w-2xl m-auto">
+                    Choose the perfect plan for your needs. Cancel or upgrade anytime.
+                </p>
+            </div>
+
+            <div class="mt-10 space-y-4 md:space-y-0 md:grid md:grid-cols-3 md:gap-8 lg:gap-5 xl:gap-8">
+                <!-- Basic Plan -->
+                <div class="relative bg-white rounded-lg shadow-lg overflow-hidden plan-card transition duration-300">
+                    <div class="px-6 py-8">
+                        <div class="flex items-center">
+                            <h3 class="text-2xl font-medium text-gray-900">Basic</h3>
+                            <span class="ml-2 px-3 py-1 text-xs rounded-full bg-blue-100 text-blue-800">Popular</span>
+                        </div>
+                        <div class="mt-4 flex items-baseline text-5xl font-extrabold">
+                            $1<span class="ml-1 text-2xl font-medium text-gray-500">/mo</span>
+                        </div>
+                        <p class="mt-2 text-sm text-gray-500">Perfect for small projects</p>
+                        
+                        <div class="mt-8">
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 text-green-500">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <p class="ml-3 text-base text-gray-700">1 vCPU Core</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 text-green-500">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <p class="ml-3 text-base text-gray-700">1GB RAM</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 text-green-500">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <p class="ml-3 text-base text-gray-700">25GB SSD Storage</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 text-green-500">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <p class="ml-3 text-base text-gray-700">1TB Bandwidth</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 text-green-500">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <p class="ml-3 text-base text-gray-700">1 IPv4 Address</p>
+                                </li>
+                            </ul>
+                            <div class="mt-8">
+                                <button class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-300 buy-now" data-plan="basic">
+                                    Buy Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Standard Plan -->
+                <div class="relative bg-white rounded-lg shadow-lg overflow-hidden plan-card transition duration-300">
+                    <div class="feature-badge">Best Value</div>
+                    <div class="px-6 py-8">
+                        <h3 class="text-2xl font-medium text-gray-900">Standard</h3>
+                        <div class="mt-4 flex items-baseline text-5xl font-extrabold">
+                            $10<span class="ml-1 text-2xl font-medium text-gray-500">/mo</span>
+                        </div>
+                        <p class="mt-2 text-sm text-gray-500">Great for growing businesses</p>
+                        
+                        <div class="mt-8">
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 text-green-500">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <p class="ml-3 text-base text-gray-700">2 vCPU Cores</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 text-green-500">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <p class="ml-3 text-base text-gray-700">2GB RAM</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 text-green-500">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <p class="ml-3 text-base text-gray-700">50GB SSD Storage</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 text-green-500">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <p class="ml-3 text-base text-gray-700">2TB Bandwidth</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 text-green-500">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <p class="ml-3 text-base text-gray-700">1 IPv4 Address</p>
+                                </li>
+                            </ul>
+                            <div class="mt-8">
+                                <button class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-300 buy-now" data-plan="standard">
+                                    Buy Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="relative bg-white rounded-lg shadow-lg overflow-hidden plan-card transition duration-300">
+                    <div class="px-6 py-8">
+                        <h3 class="text-2xl font-medium text-gray-900">Premium</h3>
+                        <div class="mt-4 flex items-baseline text-5xl font-extrabold">
+                            $20<span class="ml-1 text-2xl font-medium text-gray-500">/mo</span>
+                        </div>
+                        <p class="mt-2 text-sm text-gray-500">For high-traffic applications</p>
+                        
+                        <div class="mt-8">
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 text-green-500">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <p class="ml-3 text-base text-gray-700">4 vCPU Cores</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 text-green-500">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <p class="ml-3 text-base text-gray-700">4GB RAM</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 text-green-500">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <p class="ml-3 text-base text-gray-700">100GB SSD Storage</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 text-green-500">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <p class="ml-3 text-base text-gray-700">5TB Bandwidth</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 text-green-500">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <p class="ml-3 text-base text-gray-700">2 IPv4 Addresses</p>
+                                </li>
+                            </ul>
+                            <div class="mt-8">
+                                <button class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-300 buy-now" data-plan="premium">
+                                    Buy Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="bg-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Testimonials</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Trusted by businesses worldwide
+                </p>
+            </div>
+            
+            <div class="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/da743b4e-0278-419f-8c17-d5deea3e5a96.png" alt="Portrait of John D. - CEO of TechStart in a professional business suit" class="h-12 w-12 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="text-lg font-medium text-gray-900">John D.</h4>
+                            <p class="text-gray-500">CEO, TechStart</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-600">
+                        "The performance of these VPS servers is outstanding. We've seen a 40% improvement in page load times since migrating."
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e67540c0-7105-43fc-bf0a-fb0977f9fe3f.png" alt="Portrait of Sarah K. - CTO of WebServices with glasses and curly hair" class="h-12 w-12 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="text-lg font-medium text-gray-900">Sarah K.</h4>
+                            <p class="text-gray-500">CTO, WebServices</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-600">
+                        "Reliable and scalable. We've grown from one VPS to a fleet of 15 with zero downtime during upgrades."
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d50e2c50-ea16-4139-9979-4ad9abbdd848.png" alt="Portrait of Michael T. - Developer at AppSolutions wearing a casual t-shirt" class="h-12 w-12 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="text-lg font-medium text-gray-900">Michael T.</h4>
+                            <p class="text-gray-500">Developer, AppSolutions</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-600">
+                        "The support team is incredibly responsive. They've helped us optimize our deployments for peak efficiency."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">FAQ</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Frequently asked questions
+                </p>
+            </div>
+            
+            <div class="mt-10">
+                <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-12">
+                    <div>
+                        <dt class="text-lg leading-6 font-medium text-gray-900">
+                            What operating systems are supported?
+                        </dt>
+                        <dd class="mt-2 text-base text-gray-500">
+                            We support a wide range of Linux distributions including Ubuntu, CentOS, Debian, and Fedora. Windows Server is also available for an additional license fee.
+                        </dd>
+                    </div>
+                    
+                    <div>
+                        <dt class="text-lg leading-6 font-medium text-gray-900">
+                            Can I upgrade my VPS later?
+                        </dt>
+                        <dd class="mt-2 text-base text-gray-500">
+                            Yes, you can upgrade your resources at any time through your control panel. Upgrades typically take effect within minutes with no downtime.
+                        </dd>
+                    </div>
+                    
+                    <div>
+                        <dt class="text-lg leading-6 font-medium text-gray-900">
+                            Do you offer backups?
+                        </dt>
+                        <dd class="mt-2 text-base text-gray-500">
+                            Automatic daily backups are available as an add-on service. We also provide snapshot functionality for point-in-time recovery.
+                        </dd>
+                    </div>
+                    
+                    <div>
+                        <dt class="text-lg leading-6 font-medium text-gray-900">
+                            What's your uptime guarantee?
+                        </dt>
+                        <dd class="mt-2 text-base text-gray-500">
+                            We offer a 99.9% uptime SLA for all our VPS plans. If we fall short, you'll receive service credits per our terms.
+                        </dd>
+                    </div>
+                    
+                    <div>
+                        <dt class="text-lg leading-6 font-medium text-gray-900">
+                            How is billing handled?
+                        </dt>
+                        <dd class="mt-2 text-base text-gray-500">
+                            All plans are billed monthly. Annual payment options are available with a 20% discount. You can cancel at any time.
+                        </dd>
+                    </div>
+                    
+                    <div>
+                        <dt class="text-lg leading-6 font-medium text-gray-900">
+                            Is there a money-back guarantee?
+                        </dt>
+                        <dd class="mt-2 text-base text-gray-500">
+                            Yes, we offer a 7-day money-back guarantee on all new VPS accounts. Domain registrations and add-ons are non-refundable.
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="bg-blue-700">
+        <div class="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                <span class="block">Ready to launch your server?</span>
+                <span class="block">Get started today.</span>
+            </h2>
+            <p class="mt-4 text-lg leading-6 text-blue-200">
+                Join thousands of satisfied customers running their applications on our high-performance VPS.
+            </p>
+            <button class="mt-8 w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-white hover:bg-blue-50 md:py-4 md:text-lg md:px-10 buy-now" data-plan="standard">
+                Get Started Now
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+                <div class="col-span-2">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/82145697-82b7-4dac-8ccf-69efff976cf0.png" alt="Company logo in white for footer section" class="h-8 w-auto">
+                    <p class="mt-4 text-gray-300 text-sm">
+                        Premium VPS hosting solutions for businesses and developers. Performance, reliability, and expert support.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase">Products</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">VPS Hosting</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Dedicated Servers</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Cloud Storage</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">SSL Certificates</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase">Company</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Contact</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Press</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase">Legal</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Privacy</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Terms</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">SLA</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">DMCA</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+                <div class="flex space-x-6 md:order-2">
+                    <a href="#" class="text-gray-400 hover:text-gray-300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-300">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-300">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
+                    © 2023 CloudVPS. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Buy Now button functionality
+        document.querySelectorAll('.buy-now').forEach(button => {
+            button.addEventListener('click', function() {
+                const plan = this.getAttribute('data-plan');
+                let message = '';
+                
+                switch(plan) {
+                    case 'basic':
+                        message = 'Basic VPS ($5/month) selected. Redirecting to checkout...';
+                        break;
+                    case 'standard':
+                        message = 'Standard VPS ($10/month) selected. Redirecting to checkout...';
+                        break;
+                    case 'premium':
+                        message = 'Premium VPS ($20/month) selected. Redirecting to checkout...';
+                        break;
+                    default:
+                        message = 'VPS plan selected. Redirecting to checkout...';
+                }
+                
+                alert(message);
+                // In a real implementation, this would redirect to a checkout page
+                // window.location.href = `/checkout?plan=${plan}`;
+            });
+        });
+    </script>
+</body>
+</html>
+
